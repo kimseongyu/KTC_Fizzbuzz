@@ -1,3 +1,4 @@
+
 def fizzbuzz():
     for i in range(1, 100 + 1):
         if i % 3 == 0 and i % 5 == 0:
@@ -9,4 +10,9 @@ def fizzbuzz():
         else:
             print(i)
 
-fizzbuzz()
+def main():
+    print("Let's FizzBuzz")
+    fizzbuzz(100)
+    
+if __name__ == "__main__":
+    main()
