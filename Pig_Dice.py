@@ -8,7 +8,17 @@ def take_turn(player_name, player_score):
 
 # 플레이어가 승리 조건을 충족했는지 확인하는 함수
 def is_winner(player_score, winning_score):
-  return 0
+    """
+    Check if the player has won the game.
+
+    Args:
+        player_score (int): The current score of the player.
+        winning_score (int): The score required to win the game.
+
+    Returns:
+        bool: True if the player's score is greater than or equal to the winning score, False otherwise.
+    """
+    return player_score >= winning_score
 
 # 게임을 진행하는 함수
 def game():
