@@ -1,6 +1,7 @@
+import random
 # 주사위를 굴려 결과를 반환하는 함수
 def roll_dice():
-  return 0
+  return random.randint(1, 6)
 
 # 플레이어가 차례를 수행하는 함수
 def take_turn(player_name, player_score):
